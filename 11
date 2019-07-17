@@ -1,0 +1,6 @@
+var arrays = [[1, 2, 3], [4, 5], [6]];
+var ar2 = arrays.reduce(function(accum,currentValue) {
+	  console.log(currentValue)
+	  return accum.concat(currentValue)
+})
+console.log (ar2)
