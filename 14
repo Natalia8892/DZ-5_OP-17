@@ -1,0 +1,8 @@
+var month = function() {
+  var scroll = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  return {
+    name: function(number) { return scroll[number]},
+    number: function(name) { return scroll.indexOf(name)}
+  }
+}()
+console.log(month.name(2))
