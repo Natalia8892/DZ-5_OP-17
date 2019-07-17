@@ -1,0 +1,11 @@
+var quanity=8, board=""
+for (a=0;a<quanity;a++) {
+	for (b=0; b<quanity;b++) {
+		if ((a+b)%2==0)
+			board+=" "
+		else 
+			board+="#"
+    }
+	board+="\n"
+}
+console.log(board)
