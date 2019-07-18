@@ -1,0 +1,12 @@
+var name = prompt("Введите Имя" + " " + "и Фамилию")
+var x = name.split(" ")
+if (x.length !== 2) {
+    console.log("Неверно введена информация")
+} else if (x.find(Number) !== undefined) {
+    name = x.join(" ")
+    console.log("Числовое значение")
+} else if (name[name.indexOf(" ") + 1] !== name[name.indexOf(" ") + 1].toUpperCase()) {
+    console.log("Некорректный формат ввода")
+} else {
+    console.log(name)
+}
