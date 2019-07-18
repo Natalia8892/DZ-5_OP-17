@@ -1,0 +1,8 @@
+function get (arr) {	
+	for(var i = 0; i < arr. length; i++) {
+		z=[i]
+		setTimeout(alert(z),3000)
+    }
+}
+
+get([3,7,25,875])
