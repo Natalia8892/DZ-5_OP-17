@@ -1,0 +1,16 @@
+function Check(a, b) {
+    if (a == b) {
+        console.log("True")
+    } else {
+        console.log("False")
+    }
+}
+Check({
+    name: "Vasya",
+    age: 25
+}, {
+    name: "Kolya",
+    age: 18
+})
+
+
