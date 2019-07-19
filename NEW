@@ -35,23 +35,24 @@ findName("5 Hope")
 
 
 
-   function one(name) {
+      function one(name) {
         function two() {
             function three() {
                 function four() {
-                     console.log(name)                // вывод в консоль при несоблюдении условий
+                     console.log(name)
                 }                 
                 for (var element of array2) {
                     var isnumb = parseInt(element)
                     if (isnumb >= 0) {
                         alert("Нельзя задавать числа")
                     }
-                }
-                    if ((array[0] !== array[0].toUpperCase())) {
-                        alert("Некорректный формат ввода (нижний регистр)")
+                }	for (var element1 of array) {                               // Вывод name при несоблюдении условия
+                    	if ((element1.charAt(0) !== element1.charAt(0).toUpperCase())) {
+                        	console.log("Некорректный формат ввода (нижний регистр)")
                 } four()
                         
             } 
+            }
             var array2 = name.split("")
             if (array.length !== 2)
                 alert("Некорректный ввод")
