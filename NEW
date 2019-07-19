@@ -1,65 +1,28 @@
-var name = prompt("Введите Имя" + " " + "и Фамилию")
-var x = name.split(" ")
-if (x.length !== 2) {
-    console.log("Неверно введена информация")
-} else if (x.find(Number) !== undefined) {
-    name = x.join(" ")
-    console.log("Числовое значение")                                                    // баг с выводом строк типа "Abc5"
-} else if (name[name.indexOf(" ") + 1] !== name[name.indexOf(" ") + 1].toUpperCase()) {
-    console.log("Некорректный формат ввода")
-} else {
-    console.log(name)
-}
-
-
-function findName(name) {
-var x = name.split(" ")
-var z = name.split("")
-if (x.length !== 2) {
-    console.log("Больше двух слов")
-}
-for (var y of z) {
-    var a = parseInt(y)
-    if (a >= 0) {
-        console.log("Нельзя задавать числа")                                    // при выводе строк с числами-забивает name в консоль!!!
-    }
-}
-if ((z[z.indexOf(" ") + 1] !== z[z.indexOf(" ") + 1].toUpperCase())||(z[0]!==z[0].toUpperCase())) {
-    console.log("Некорректный формат ввода (нижний регистр)")
-} else {
-    console.log(name)
-}
-}
-findName("5 Hope")
-
-
-
-
-      function one(name) {
-        function two() {
-            function three() {
-                function four() {
-                     console.log(name)
-                }                 
-                for (var element of array2) {
-                    var isnumb = parseInt(element)
-                    if (isnumb >= 0) {
-                        alert("Нельзя задавать числа")
-                    }
-                }	for (var element1 of array) {                               // Вывод name при несоблюдении условия
-                    	if ((element1.charAt(0) !== element1.charAt(0).toUpperCase())) {
-                        	console.log("Некорректный формат ввода (нижний регистр)")
-                } four()
-                        
-            } 
+function one(name) {
+    function two() {
+        function three() {
+            function four() {
+                console.log(name)
             }
-            var array2 = name.split("")
-            if (array.length !== 2)
-                alert("Некорректный ввод")
-                three()
+            for (var element of array2) {
+                var isnumb = parseInt(element)
+                if (isnumb >= 0) {
+                    return
+                }
+            }
+            for (var element1 of array2) {
+                if ((array2[array2.indexOf(" ") + 1] !== array2[array2.indexOf(" ") + 1].toUpperCase()) || (array2[0] !== array2[0].toUpperCase())) {
+					return
+                }four()   	            
+            }
+        }
+        var array2 = name.split("")
+        if (array.length !== 2)
+            return
+        three()
     }
     var array = name.split(" ")
     two()
 }
 
-one(prompt("Введите имя"+" и Фамилию"))
+one(prompt("Введите имя" + " и Фамилию"))
