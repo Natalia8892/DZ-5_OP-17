@@ -12,8 +12,9 @@ function one(name) {
             }
             for (var element1 of array2) {
                 if ((array2[array2.indexOf(" ") + 1] !== array2[array2.indexOf(" ") + 1].toUpperCase()) || (array2[0] !== array2[0].toUpperCase())) {
-					return
-                }four()   	            
+                    return
+                }
+                four()
             }
         }
         var array2 = name.split("")
